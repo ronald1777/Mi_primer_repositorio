@@ -1,0 +1,69 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class CrabWorld here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class ZomWorld extends World
+{
+
+    /**
+     * Constructor for objects of class CrabWorld.
+     * 
+     */
+    public ZomWorld()
+    {    
+        super(560, 560, 1); 
+        prepare();
+    }
+    
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+
+        Balas balas = new Balas();
+        addObject(balas,452,99);
+        Balas balas2 = new Balas();
+        addObject(balas2,448,484);
+        Balas balas3 = new Balas();
+        addObject(balas3,59,476);
+        Balas balas4 = new Balas();
+        addObject(balas4,76,53);
+        Balas balas5 = new Balas();
+        addObject(balas5,277,460);
+        Balas balas6 = new Balas();
+        addObject(balas6,60,273);
+        Balas balas7 = new Balas();
+        addObject(balas7,261,56);
+        Balas balas8 = new Balas();
+        addObject(balas8,183,380);
+        balas8.setLocation(180,380);
+        removeObject(balas8);
+        removeObject(balas6);
+        removeObject(balas7);
+        Zombie zombie = new Zombie();
+        addObject(zombie,130,495);
+        Zombie zombie2 = new Zombie();
+        addObject(zombie2,193,499);
+        Zombie zombie3 = new Zombie();
+        addObject(zombie3,71,130);
+        zombie.setLocation(64,371);
+        Zombie zombie4 = new Zombie();
+        addObject(zombie4,484,364);
+        Prota prota = new Prota();
+        addObject(prota,268,276);
+        Zombie zombie5 = new Zombie();
+        addObject(zombie5,484,54);
+        Zombie zombie6 = new Zombie();
+        addObject(zombie6,204,41);
+        Zombie zombie7 = new Zombie();
+        addObject(zombie7,343,510);
+        Zombie zombie8 = new Zombie();
+        addObject(zombie8,537,520);
+    }
+}
